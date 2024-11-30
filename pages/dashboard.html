@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+
+    <script src="/scripts/dashboard.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <div id="header-welcome">
+                <h1 id="user-name"></h1>
+            </div>
+            <div id="header-logout">
+                <button>Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="timetable-management">
+            <h2>Create Your Timetable</h2>
+            <form id="timetable-form">
+                <label for="class-name">Class Name:</label>
+                <input type="text" id="class-name" required>
+
+                <label for="start-time">Start Time:</label>
+                <input type="time" id="start-time" required>
+
+                <label for="end-time">End Time:</label>
+                <input type="time" id="end-time" required>
+
+                <button type="button" id="add-period-btn">Add Period</button>
+            </form>
+        </section>
+
+        <section class="timetable-display">
+            <h2 style="text-decoration: underline;">Your Timetable</h2>
+            <table id="timetable">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button id="download-timetable-btn">Download Timetable</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved to Surajit.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

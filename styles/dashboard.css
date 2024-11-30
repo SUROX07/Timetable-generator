@@ -1,0 +1,161 @@
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+body {
+    background: #f4f4f4;
+    margin: 0;
+}
+
+#header-container {
+    background: #333;
+    padding: 10px 0;
+    display: flex;
+    color: #ddd;
+    justify-content: space-between;
+    padding: 0;
+}
+header #header-welcome{
+    margin-left: 30px;
+}
+
+header #header-logout{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+header #header-logout button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0;
+    border: none;
+
+}
+header #header-logout button:hover{
+    background-color: #e74c3c;
+    box-shadow: 2px 3px 2px black;
+
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timetable-management {
+    margin-bottom: 20px;
+}
+
+.timetable-management form {
+    display: flex;
+    flex-direction: column;
+}
+
+.timetable-management label {
+    margin: 10px 0 5px;
+}
+
+.timetable-management input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.timetable-management button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.timetable-management button:hover {
+    background: #555;
+}
+
+.timetable-display {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #333333b0;
+}
+
+#timetable {
+    width: 100%;
+}
+
+#timetable th, #timetable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#timetable th {
+    background-color: #f4f4f4;
+}
+
+#timetable td button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#timetable td button:hover {
+    background-color: #e74c3c;
+    box-shadow: 2px 2px 2px black;
+}
+#download-timetable-btn{
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+#download-timetable-btn:hover{
+    background-color: #e74c3c;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
