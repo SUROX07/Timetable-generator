@@ -2,16 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const cors = require('cors');
-require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-    credentials: true
-}));
+app.use(cors());
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/users_db', {
+mongoose.connect('mongodb://localhost:27017/users_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
